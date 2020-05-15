@@ -1,0 +1,2 @@
+# hesapMakines_hw6
+ 
