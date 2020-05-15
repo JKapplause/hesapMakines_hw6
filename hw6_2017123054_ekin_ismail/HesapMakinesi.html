@@ -1,0 +1,126 @@
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+    * {
+        box-sizing: border-box;
+        border-radius: 25px;
+    }
+
+    .arkaPlan {
+        background-image: url("image/original.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .baslik {
+        position: absolute;
+        font-family: "Comic Sans MS";
+        font-size: 40px;
+        left: 770px;
+        top: 100px;
+        font-weight: bold;
+        background-image: linear-gradient(to left, violet, indigo, turquoise, green, yellow, orange, red, red);
+        -webkit-background-clip: text;
+
+        color: transparent;
+    }
+
+    .hesapMakinesi{
+        max-width:320px;
+        background: #231a35;
+        position: absolute;
+        top: 200px;
+        left: 750px;
+        
+
+    }
+    .hesapMakinesiTuslari{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        border:0;
+    }
+    .Hesap-numaraları{
+        font-family: 'Space Mono', serif;
+        background: black;
+        color: white;
+        font-size: 2em;
+        border:0;
+        padding: 0.3em;
+        text-align: right;
+        width: 100%;
+        height: 100px;
+        font-family: "Comic Sans MS";
+        
+    }
+    .span-2{
+        grid-column: span 2;
+
+    }
+    .span-3{
+        grid-column: span 3;
+    }
+    .btn{
+        font-size:1em;
+        height: 65px;
+        border:1px solid black;
+
+    }
+    .btn:hover{
+        background: #fff;
+        
+    }
+    .turuncu{
+        background-color: deepskyblue;
+    }
+
+
+
+</style>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hesap Makinesi</title>
+
+</head>
+<body class="arkaPlan">
+<div class="baslik">Hesap Makinesi</div>
+<div class="container">
+
+    <div class="hesapMakinesi">
+
+        <input type="text" class="Hesap-numaraları" value="0">
+
+        <div class="hesapMakinesiTuslari">
+            <button class="btn is-clear span-2 turuncu operator">C</button>
+            <button class="btn turuncu operator">&larr;</button>
+            <button class="btn turuncu operator">&divide;</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn turuncu operator">x</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn turuncu">-</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn turuncu operator">+</button>
+            <button class="btn span-3">0</button>
+            <button class="btn turuncu operator">=</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<script src="HesapMakinesi.js"></script>
+</body>
+
+</html>
+
